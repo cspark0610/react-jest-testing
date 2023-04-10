@@ -17,7 +17,7 @@ describe("Login compoment test suite", () => {
 	}
 
 	const authServiceMock: AuthService = {
-		login: jest.fn().mockResolvedValue(userMock),
+		login: jest.fn(),
 		getUserAttributes: jest.fn(),
 	}
 
@@ -75,7 +75,7 @@ describe("Login compoment test suite", () => {
 	})
 
 	it("handles correctly authService async login fn", async () => {
-		//authServiceMock.login = jest.fn().mockResolvedValue(userMock)
+		authServiceMock.login = jest.fn().mockResolvedValue(userMock)
 		const inputsValues = container.querySelectorAll("input")
 		const userNameInput = inputsValues[0]
 		const passwordInput = inputsValues[1]
