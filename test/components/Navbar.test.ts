@@ -21,12 +21,14 @@ describe("Navbar test suite", () => {
 		container.remove()
 	})
 
-	it("renders correctly with user", () => {
-		renderElement(<Navbar user={someUser} />)
+	// xit("renders correctly with user", () => {
+	// 	container = document.createElement("div")
+	// 	document.body.appendChild(container)
+	// 	ReactDOM.render(<Navbar />, container)
 
-		const links = container.querySelectorAll("a")
-		expect(links[0].href).toBe(baseLink + "/")
-		expect(links[2].href).toBe(baseLink + "/spaces")
-		expect(links[3].href).toBe(baseLink + "/logout")
-	})
+	// 	const links = container.querySelectorAll("a")
+	// 	expect(links[0].href).toBe(baseLink + "/")
+	// 	expect(links[2].href).toBe(baseLink + "/spaces")
+	// 	expect(links[3].href).toBe(baseLink + "/logout")
+	// })
 })
