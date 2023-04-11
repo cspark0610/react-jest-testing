@@ -1,16 +1,16 @@
-import React, { Component } from "react"
-import "./ConfirmModalComponent.css"
+import React, { Component } from 'react';
+import './ConfirmModalComponent.css';
 
 interface ConmfirmModalProps {
-	show: boolean
-	content: string
-	close: () => void
+	show: boolean;
+	content: string;
+	close: () => void;
 }
 
 export class ConfirmModalComponent extends Component<ConmfirmModalProps> {
 	render() {
 		if (!this.props.show) {
-			return null
+			return null;
 		}
 		return (
 			<div className="modal">
@@ -20,6 +20,6 @@ export class ConfirmModalComponent extends Component<ConmfirmModalProps> {
 					<button onClick={() => this.props.close()}>Ok, Close</button>
 				</div>
 			</div>
-		)
+		);
 	}
 }

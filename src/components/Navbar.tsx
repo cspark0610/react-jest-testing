@@ -6,7 +6,7 @@ interface NavbarProps {
 	user: User | undefined
 }
 
-export class Navbar extends Component<NavbarProps> {
+export class Navbar extends Component<NavbarProps, {}> {
 	render() {
 		const renderLoginLogout = () => {
 			return this.props.user ? (

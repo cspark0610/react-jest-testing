@@ -1,5 +1,3 @@
-/* eslint-disable testing-library/no-node-access */
-/* eslint-disable testing-library/no-render-in-setup */
 import React from "react"
 import ReactDOM from "react-dom"
 import { fireEvent, waitFor } from "@testing-library/react"
